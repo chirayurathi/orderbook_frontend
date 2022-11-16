@@ -9,7 +9,6 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import { staticMenu } from '../static/Menus';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { AppBar, Toolbar, IconButton, Typography } from '@material-ui/core';
-import MenuIcon from '@material-ui/icons/Menu';
 import { Link } from 'react-router-dom';
 import ListItemLinkContainer from '../container/ListItemLinkContainer';
 import { useStyles } from '../static/MiniDrawerStyles';

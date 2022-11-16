@@ -2,13 +2,12 @@ import { Grid, Typography } from '@material-ui/core';
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import AddItemModal from '../component/AddItemModal';
-import AddOrderModal from '../component/AddOrderModal';
 import ItemTable from '../component/ItemTable';
 import useAxios from '../hooks/useAxios';
 
 const Order = ()=>{
     const params = useParams()
-    const {response, error, loading} = useAxios({
+    const {response, } = useAxios({
         method:'get',
         url:`orders/${params.id}`
     })

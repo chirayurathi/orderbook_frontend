@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { DataGrid } from '@mui/x-data-grid';
-import { getOrders } from '../api/orderApi';
 import useAxios from '../hooks/useAxios';
 import { Button } from '@material-ui/core';
 import { Link } from 'react-router-dom';
@@ -95,6 +94,7 @@ const columns = [
     method:'get',
     url:'orders/'
   })
+  console.log(error);
   React.useEffect(()=>{
     console.log(response)
     if(loading!==true)

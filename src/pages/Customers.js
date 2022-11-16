@@ -5,7 +5,6 @@ import CustomerTable from '../component/CustomerTable';
 import AddCustomerModal from '../component/AddCustomerModal';
 
 export const Customers = () => {
-    const { toolbar } = useStyles;
     const [open, setOpen] = React.useState(false);
     return (
         <Grid container sx={{padding:"20px"}}>

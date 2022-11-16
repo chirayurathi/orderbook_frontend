@@ -7,24 +7,19 @@ import DialogContent from "@material-ui/core/DialogContent";
 import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import { Grid } from "@material-ui/core";
-import Autocomplete, {
-  createFilterOptions,
-} from "@material-ui/lab/Autocomplete";
 import useAxios from "../hooks/useAxios";
 import { addOrder } from "../api/orderApi";
 import AddCustomerModal from "./AddCustomerModal";
 import { useHistory } from "react-router-dom";
 
-const filter = createFilterOptions();
 
 export default function UpdateOrderModal({order,setOpen}) {
-  const history = useHistory();  
   const [value, setValue] = React.useState(null);
   const [amt, setAmt] = React.useState(order.amount);
-  const [init, setInit] = React.useState(null);
+  const [init, ] = React.useState(null);
   const [date, setDate] = React.useState(order.date);
   const [customerOpen, toggleCustomerOpen] = React.useState(false);
-  const { response, error, loading } = useAxios({
+  const { response,} = useAxios({
     url: "customers/",
     method: "get",
   });

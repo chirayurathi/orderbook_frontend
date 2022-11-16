@@ -5,7 +5,6 @@ import OrderTable from '../component/OrderTable';
 import AddOrderModal from '../component/AddOrderModal';
 
 export const Orders = () => {
-    const { toolbar } = useStyles;
     return (
         <Grid container sx={{padding:"20px"}}>
             <Grid container item justifyContent='space-between' alignItems='center'>

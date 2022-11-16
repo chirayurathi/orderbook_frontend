@@ -48,7 +48,7 @@ export default function AddOrderModal() {
         handleClose();
     })
   }
-  const { response, error, loading } = useAxios({
+  const { response,  } = useAxios({
     url: "customers/",
     method: "get",
   });

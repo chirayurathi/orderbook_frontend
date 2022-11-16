@@ -10,6 +10,7 @@ import { Customers } from '../pages/Customers';
 
 export const Routing = (props) => {
     const { content, toolbar, contentShift } = useStyles();
+    console.log(toolbar);
     const { openSideBar } = props;
 
     return (

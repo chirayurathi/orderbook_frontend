@@ -29,6 +29,7 @@ export default function OrderTable() {
     method:'get',
     url:'customers/'
   })
+  console.log(error);
   React.useEffect(()=>{
     console.log(response)
     if(loading!==true)
