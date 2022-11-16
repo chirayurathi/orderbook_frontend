@@ -10,7 +10,6 @@ import { Grid } from "@material-ui/core";
 import useAxios from "../hooks/useAxios";
 import { addOrder } from "../api/orderApi";
 import AddCustomerModal from "./AddCustomerModal";
-import { useHistory } from "react-router-dom";
 
 
 export default function UpdateOrderModal({order,setOpen}) {

@@ -1,5 +1,4 @@
 import React from 'react';
-import { useStyles } from '../static/MiniDrawerStyles';
 import { Grid, Typography } from '@material-ui/core';
 import OrderTable from '../component/OrderTable';
 import AddOrderModal from '../component/AddOrderModal';
