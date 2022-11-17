@@ -27,7 +27,7 @@ function MiniDrawer(props) {
                     [classes.appBarShift]: openSideBar,
                 })}>
                 <Toolbar>
-                    {/* <IconButton
+                    <IconButton
                         color="inherit"
                         aria-label="Open drawer"
                         onClick={handlerSideBar}
@@ -37,7 +37,7 @@ function MiniDrawer(props) {
                         })}
                     >
                         <MenuIcon />
-                    </IconButton> */}
+                    </IconButton>
                     <Typography style={{ color: 'white' }} component={Link} to='/' variant="h6" noWrap>
                         Rupa Creation
                     </Typography>
