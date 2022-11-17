@@ -12,6 +12,9 @@ import { AppBar, Toolbar, IconButton, Typography } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import ListItemLinkContainer from '../container/ListItemLinkContainer';
 import { useStyles } from '../static/MiniDrawerStyles';
+import MenuIcon from '@material-ui/icons/Menu';
+
+
 
 function MiniDrawer(props) {
     const classes = useStyles();
